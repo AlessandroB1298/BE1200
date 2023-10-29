@@ -1,0 +1,14 @@
+/home/Alessandro/share/robot_firmware/bin/Debug/net7.0/robot_firmware
+/home/Alessandro/share/robot_firmware/bin/Debug/net7.0/robot_firmware.deps.json
+/home/Alessandro/share/robot_firmware/bin/Debug/net7.0/robot_firmware.runtimeconfig.json
+/home/Alessandro/share/robot_firmware/bin/Debug/net7.0/robot_firmware.dll
+/home/Alessandro/share/robot_firmware/bin/Debug/net7.0/robot_firmware.pdb
+/home/Alessandro/share/robot_firmware/obj/Debug/net7.0/robot_firmware.GeneratedMSBuildEditorConfig.editorconfig
+/home/Alessandro/share/robot_firmware/obj/Debug/net7.0/robot_firmware.AssemblyInfoInputs.cache
+/home/Alessandro/share/robot_firmware/obj/Debug/net7.0/robot_firmware.AssemblyInfo.cs
+/home/Alessandro/share/robot_firmware/obj/Debug/net7.0/robot_firmware.csproj.CoreCompileInputs.cache
+/home/Alessandro/share/robot_firmware/obj/Debug/net7.0/robot_firmware.dll
+/home/Alessandro/share/robot_firmware/obj/Debug/net7.0/refint/robot_firmware.dll
+/home/Alessandro/share/robot_firmware/obj/Debug/net7.0/robot_firmware.pdb
+/home/Alessandro/share/robot_firmware/obj/Debug/net7.0/robot_firmware.genruntimeconfig.cache
+/home/Alessandro/share/robot_firmware/obj/Debug/net7.0/ref/robot_firmware.dll

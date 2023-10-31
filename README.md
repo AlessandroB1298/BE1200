@@ -25,5 +25,5 @@ downloaded, open up the imager on your current computer.
 
 
 ### Once opened you will see the following:
-![picture](Screenshot 2023-10-31 at 3.06.01 PM.png )
+![picture](https://github.com/AlessandroB1298/BE1200/blob/main/Screenshot%202023-10-31%20at%203.06.01%20PM.png )
 

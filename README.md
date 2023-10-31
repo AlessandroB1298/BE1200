@@ -25,4 +25,5 @@ downloaded, open up the imager on your current computer.
 
 
 ### Once opened you will see the following:
+![alt text](http://url/to/img.png)
 

@@ -35,9 +35,11 @@ downloaded, open up the imager on your current computer.
 #### Next, open a terminal and type the following:
 `sudo ssh <NAME_OF_PIE>@<PI'S IP ADDRESS`
 
-This code essentially allows you to access your pi from your computer, creating a tunnel that only you, the rrot user has access to.
+This code essentially allows you to access your pi from your computer, creating a tunnel that only you, the root user has access to.
 
 This is a safe and secure way to connect to your pi without using a mouse, keyboard, and monitor.
+
+### Setting up on VS Code
 
 #### Once you are logged into your pi, you will need to open it in vs code, do this by downloading VS Code on both your machine and the raspberry pi.
 

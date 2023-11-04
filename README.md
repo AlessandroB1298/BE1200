@@ -91,10 +91,12 @@ Do this by running the command:
 #### Make sure that these lines represent your setup:
 
 ``` 
-servo1 = Servo(12, pin_factory=factory)
-servo2 = Servo(16, pin_factory=factory)
-servo3 = Servo(19, pin_factory=factory)
+servo1 = Servo(<GPIO_NUMB>, pin_factory=factory)
+servo2 = Servo(<GPIO_NUMB>, pin_factory=factory)
+servo3 = Servo(<GPIO_NUMB>, pin_factory=factory)
 ```
+#### Besides these adjustments, the rest of the code will work perfectlly, you will be prompted to open the app in a browser.
 
+### Have Fun
 
 

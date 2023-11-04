@@ -57,5 +57,32 @@ Do this by running the command:
 
 ### Now we are done with the setup!
 
+#Configuring wiring and servo motors
+
+##This section is dedicated to the setup of the servo motors and connecting them with our raspberry pi 4
+### This is also very similar for Arduinos.
+
+
+### Our Servo Motors come with three wrires attached to them: Live,Ground, and Signal.
+
+### Our Raspberry Pi comes with many different pins and reading them is near impossible, however we can look at a gpio board.
+
+
+
+
+### The pins that say GPIO are very important, this is where our signal wire goes to from our servo motor.
+
+### You will also see a 5v pin and a ground pin when looking at a GPIO board.
+
+## Reminder, make sure nothing is live when you are connecting wires, you could short circuit your pi and there is no way to fix it!
+
+### Simply you must connect the corresponding wires.
+
+
+# Running The Program!
+
+## This section is all about the exexution of our program.
+### Make sure that this line 
+
 
 

@@ -67,7 +67,8 @@ Do this by running the command:
 
 ### Our Raspberry Pi comes with many different pins and reading them is near impossible, however we can look at a gpio board.
 
-
+![picture](![picture](https://github.com/AlessandroB1298/BE1200/blob/main/Screenshot%202023-11-04%20at%2012.58.17%20AM.jpeg)
+)
 
 
 ### The pins that say GPIO are very important, this is where our signal wire goes to from our servo motor.

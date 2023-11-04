@@ -1,6 +1,9 @@
 # GRABINATOR PROJECT
 
-## This project was done for BE1200
+### This project was done for BE1200
+
+#### This is a program that will allow users to use sliders on a web browser to control 
+#### servo motors using a Raspbery pi 4 Model B.
 
 ## This project required a few things before getting started
 

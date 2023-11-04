@@ -41,6 +41,7 @@ This is a safe and secure way to connect to your pi without using a mouse, keybo
 
 ### Setting up on VS Code
 
+
 #### Once you are logged into your pi, you will need to open it in vs code, do this by downloading VS Code on both your machine and the raspberry pi.
 
 Once that is completed you will need to download the remote ssh extension on both OSs.

@@ -83,7 +83,13 @@ Do this by running the command:
 # Running The Program!
 
 ## This section is all about the exexution of our program.
-### Make sure that this line 
+### Make sure that these lines represent your setup:
+
+``` 
+servo1 = Servo(12, pin_factory=factory)
+servo2 = Servo(16, pin_factory=factory)
+servo3 = Servo(19, pin_factory=factory)
+```
 
 
 

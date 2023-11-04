@@ -54,15 +54,17 @@ Once all of that is done, bring up a terminal in VS code and copy this repositor
 
 `git clone <URL`
 
+### Installing Dependencies
+
 #### Next you will need to install all of the dependencies.
 Do this by running the command:
 `python install requirenments.txt`
 
 #### Now we are done with the setup!
 
-#Configuring wiring and servo motors
+# Configuring wiring and servo motors
 
-##This section is dedicated to the setup of the servo motors and connecting them with our raspberry pi 4
+## This section is dedicated to the setup of the servo motors and connecting them with our raspberry pi 4
 #### This is also very similar for Arduinos.
 
 

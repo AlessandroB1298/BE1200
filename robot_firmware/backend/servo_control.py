@@ -3,10 +3,12 @@ from gpiozero.pins.pigpio import PiGPIOFactory
 from gpiozero import Servo
 
 factory = PiGPIOFactory()
-
-servo1 = Servo(12, pin_factory=factory)
-servo2 = Servo(16, pin_factory=factory)
-servo3 = Servo(19, pin_factory=factory)
+# Label which motor is which
+servo1 = Servo(12, pin_factory=factory) #MG
+servo2 = Servo(16, pin_factory=factory) #MG
+servo3 = Servo(19, pin_factory=factory) #MG
+servo4 = Servo(2, pin_factory= factory) #micro
+servo5 = Servo(26, pin_factory = factory) #micro
 
 app = Flask(__name__)
 app.config['DEBUG'] = True

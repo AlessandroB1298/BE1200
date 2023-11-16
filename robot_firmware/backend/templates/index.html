@@ -1,39 +1,55 @@
 <!DOCTYPE html>
 <html>
-    <head><title>GRABANITOR</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
-    </head>
-    <body>
-        <h2>GRABANITOR</h2>
-        <form method="POST" id="servo-form">
-            <p>Slider 1 <input type="range" min="0" max="180" name="slider1" id="slider1"  /> </p>
-            <p>Slider 2 <input type="range" min="0" max="180" name="slider2" id="slider2" /> </p>
-            <p>Slider 3 <input type="range" min="0" max="180" name="slider3" id="slider3" /> </p>
+  <head>
+    <title>GRABANITOR</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='index.css') }}"
+    />
+  </head>
+  <body>
+    <h2>GRABANITOR</h2>
+    <form method="POST" id="servo-form">
+      <p>
+        Base
+        <input type="range" min="0" max="180" name="slider1" id="slider1" />
+      </p>
+      <p>
+        Neck
+        <input type="range" min="0" max="180" name="slider2" id="slider2" />
+      </p>
+      <p>
+        Reach
+        <input type="range" min="0" max="180" name="slider3" id="slider3" />
+      </p>
+      <p>
+        Grip
+        <input type="range" min="0" max="180" name="slider4" id="slider4" />
+      </p>
+    </form>
+    <script>
+      const slider1 = document.getElementById("slider1");
+      const slider2 = document.getElementById("slider2");
 
-        </form>
-        <script>
-            const slider1 = document.getElementById('slider1');
-            const slider2 = document.getElementById('slider2');
+      slider1.addEventListener("change", function () {
+        updateServo("slider1", slider1.value);
+      });
 
-            slider1.addEventListener('change', function () {
-                updateServo('slider1', slider1.value);
-            });
+      slider2.addEventListener("change", function () {
+        updateServo("slider2", slider2.value);
+      });
 
-            slider2.addEventListener('change', function () {
-                updateServo('slider2', slider2.value);
-            });
-
-            function updateServo(sliderName, value) {
-                fetch('/servo', {
-                    method: 'POST',
-                    body: new URLSearchParams({
-                        [sliderName]: value
-                    }),
-                    headers: {
-                        'Content-Type': 'application/x-www-form-urlencoded'
-                    }
-                });
-            }
-        </script>
-    </body>
+      function updateServo(sliderName, value) {
+        fetch("/servo", {
+          method: "POST",
+          body: new URLSearchParams({
+            [sliderName]: value,
+          }),
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+        });
+      }
+    </script>
+  </body>
 </html>

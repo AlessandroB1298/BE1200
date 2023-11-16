@@ -3,12 +3,11 @@ from gpiozero.pins.pigpio import PiGPIOFactory
 from gpiozero import Servo
 
 factory = PiGPIOFactory()
-# Label which motor is which
-servo1 = Servo(12, pin_factory=factory) #MG
-servo2 = Servo(16, pin_factory=factory) #MG
-servo3 = Servo(19, pin_factory=factory) #MG
-servo4 = Servo(2, pin_factory= factory) #micro
-servo5 = Servo(26, pin_factory = factory) #micro
+# Creating Servo variables and include volt info
+servo1 = Servo(12, pin_factory=factory) #MG, operating voltage- 4.8-7.2
+servo2 = Servo(16, pin_factory=factory) #MG, operating voltage- 4.8-7.2
+servo3 = Servo(19, pin_factory=factory) #MG, operating voltage- 4.8-7.2
+servo4 = Servo(2, pin_factory= factory) #micro, 4.8 nomial, (3V to 6V DC)
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
@@ -26,6 +25,8 @@ def servo_control():
     slider1 = request.form.get('slider1')
     slider2 = request.form.get('slider2')
     slider3 = request.form.get('slider3')
+    slider4 = request.form.get('slider4')
+
 
     if slider1 is not None:
         servo_position_1 = ((float(slider1) / 180) * 2) - 1
@@ -38,7 +39,11 @@ def servo_control():
     if slider3 is not None:
         servo_position_3 = ((float(slider3) / 180) * 2) - 1
         servo3.value = servo_position_3
-
+    
+    if slider4 is not None:
+        servo_position_4 = ((float(slider3) / 180) * 2) - 1
+        servo3.value = servo_position_4
+    
     return "OK"
 
 
